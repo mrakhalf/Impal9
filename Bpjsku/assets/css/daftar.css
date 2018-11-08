@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+/***********
+Fonts
+***********/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
+
+/*********************************
+Body
+*********************************/
+div
+{
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+}
+ul
+{
+	list-style: none;
+	margin-bottom: 0px;
+}
+p
+{
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	line-height: 1.7;
+	font-weight: 500;
+	color: #989898;
+	font-smoothing: antialiased;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+p a
+{
+	display: inline;
+	position: relative;
+	color: inherit;
+	border-bottom: solid 2px #fde0db;
+	transition: all 200ms ease;
+}
+a, a:hover, a:visited, a:active, a:link
+{
+	text-decoration: none;
+	font-smoothing: antialiased;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+p a:active
+{
+	position: relative;
+	color: #FF6347;
+}
+p a:hover
+{
+	color: #FF6347;
+	background: #fde0db;
+}
+p a:hover::after
+{
+	opacity: 0.2;
+}
+.form-control
+{
+	color: #db5246;
+}
+/*********************************
+Home
+*********************************/
+
+.header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #FFFFFF;
+	z-index: 10;
+}
+/*********************************
+Navbar
+*********************************/
+
+.main_nav_container
+{
+	width: 100%;
+	background: #FFFFFF;
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+.navbar
+{
+	width: auto;
+	height: 100px;
+	float: right;
+	padding-left:  0px;
+	padding-right: 0px;
+}
+.navbar_menu li
+{
+	display: inline-block;
+}
+.navbar_menu li a
+{
+	display: block;
+	color: black;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 20px;
+	transition: color 0.3s ease;
+}
+.navbar_menu li a:hover
+{
+	color: grey;
+}
+/*********************************
+Logo
+*********************************/
+.logoCatalog
+{
+	margin-top: -60px;
+	margin-left: -15px;
+}
+.logobelanjayuk
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 15px;
+}
+.logobelanjayuk a
+{
+	font-size: 24px;
+	color: green;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.logobelanjayuk a span
+{
+	color: blue;
+}
+/*********************************
+Daleman Form
+*********************************/
+.juduldaftar
+{
+	margin-left: 150px;	
+}
+.btn{
+	background: green;
+}
+.input-group-addon{
+	background: white;
+}
+.tulisan p
+{
+	color: black;	
+}
+.tulisan span
+{
+	color: red;
+}
+
+.form-horizontal
+{
+	margin-top: 150px;
+}
+@media(min-width: 768px) {
+  .field-label-responsive {
+    padding-top: .5rem;
+    text-align: right;
+  }
+}
+.nomortiket{
+	padding-left: 160px;
+	background-color: grey;
+}
+
+/*********************************
+Footerbawah
+*********************************/
+.footer{
+	margin-top: 50px;
+	background: grey;
+}
+.footerbawah
+{
+	padding-left: 300px;
+	padding-top: 50px;
+	height: 130px;
+}
+.Footerkatalog
+{
+	margin-right: 48px;
+}
+.footer_nav li a, .Footerkatalog
+{
+	font-size: 15px;
+	color: black;
+	line-height: 30px;
+	transition: all 300ms ease;
+}
+.footer_nav li a:hover, .Footerkatalog a, .Footerkatalog i
+{
+	color: #fe4c50;
+}
+#wowfooter{
+	margin-top: 230px;
+}

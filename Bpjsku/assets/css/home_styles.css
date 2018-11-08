@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+/***********
+ Fonts
+***********/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
+
+/*********************************
+Body
+*********************************/
+div
+{
+	display: block;
+	position: relative;
+    box-sizing: border-box;
+}
+ul
+{
+	list-style: none;
+	margin-bottom: 0px;
+}
+p
+{
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	line-height: 1.7;
+	font-weight: 500;
+	color: #989898;
+	font-smoothing: antialiased;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+p a
+{
+	display: inline;
+	position: relative;
+	color: inherit;
+	border-bottom: solid 2px #fde0db;
+	transition: all 200ms ease;
+}
+a, a:hover, a:visited, a:active, a:link
+{
+	text-decoration: none;
+	font-smoothing: antialiased;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+p a:active
+{
+	position: relative;
+	color: #FF6347;
+}
+p a:hover
+{
+	color: #FF6347;
+	background: #fde0db;
+}
+p a:hover::after
+{
+	opacity: 0.2;
+}
+.form-control
+{
+	color: #db5246;
+}
+/*********************************
+Home
+*********************************/
+
+.header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #FFFFFF;
+	z-index: 10;
+}
+/*********************************
+ Navbar
+*********************************/
+
+.main_nav_container
+{
+	width: 100%;
+	background: #FFFFFF;
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+.navbar
+{
+	width: auto;
+	height: 100px;
+	float: right;
+	padding-left:  0px;
+	padding-right: 0px;
+}
+.navbar_menu li
+{
+	display: inline-block;
+}
+.navbar_menu li a
+{
+	display: block;
+	color: black;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 20px;
+	transition: color 0.3s ease;
+}
+.navbar_menu li a:hover
+{
+	color: grey;
+}
+/*********************************
+ Logo
+*********************************/
+
+.logobelanjayuk
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 15px;
+}
+.logobelanjayuk a
+{
+	font-size: 24px;
+	color: green;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.logobelanjayuk a span
+{
+	color: blue;
+}
+
+.red_button
+{
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 40px;
+	background: #fe4c50;
+	border-radius: 3px;
+	transition: all 0.3s ease;
+}
+.red_button:hover
+{
+	background: #FE7C7F !important;
+}
+.red_button a
+{
+	display: block;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 40px;
+	width: 100%;
+}
+.shop_now_button
+{
+	width: 140px;
+	margin-top: 32px;
+}
+.section_title
+{
+	display: inline-block;
+	text-align: center;
+}
+.section_title h2
+{
+	display: inline-block;
+}
+.section_title::after
+{
+	display: block;
+	position: absolute;
+	top: calc(100% + 13px);
+	left: 50%;
+	transform: translateX(-50%);
+	width: 60px;
+	height: 5px;
+	background: #fe4c50;
+	content: '';
+}
+
+/*********************************
+Section Produk
+*********************************/
+
+.pengaturanproduct_container
+{
+	margin-top: 150px;
+	padding-bottom: 80px;
+	border-bottom: solid 1px #ebebeb;
+}
+.pengaturanproduct_thumbnails
+{
+	height: 400px;
+}
+.pengaturanproduct_thumbnails ul li
+{
+	position: relative;
+	height: 136px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+.pengaturanproduct_thumbnails ul li::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: solid 1px #fe4c50;
+	content: '';
+	visibility: hidden;
+}
+.pengaturanproduct_thumbnails ul li.active::after,
+.pengaturanproduct_thumbnails ul li:hover::after
+{
+	visibility: visible;
+}
+.pengaturanproduct_thumbnails ul li img
+{
+	width:100%;
+	height: 99%
+}
+.image_col
+{
+	padding-right: 30px;
+}
+
+.pengaturanproduct_image_background img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.form-horizontal{
+	margin-top: 50px;
+}
+.file-loading{
+	margin-left: 310px;
+	padding-bottom: : 100px;
+}
+
+/*********************************
+Detail Produk
+*********************************/
+
+.product_details
+{
+	width: 100%;
+}
+.product_details_title
+{
+	font-weight: 500px;
+	line-height: 30px;
+}
+.product_details_title p
+{
+	margin-top: 12px;
+}
+.beliyuk
+{
+	background: hotpink;
+	margin-top: 53px;
+}
+.beliyuk p
+{
+	padding-top: 15px;
+	color: whitesmoke;
+}
+.beliyuk i
+{
+	display: inline-block;
+}
+.beliyuk span:last-child
+{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+.beliyuk span:first-child
+{
+	display: inline-block;
+	margin-right: 19px;
+	font-size: 16px;
+	transform: translateY(-1px);
+}
+.original_price
+{
+	font-weight: 500;
+	color: #b9b4c7;
+	text-decoration: line-through;
+	line-height: 30px;
+	margin-top: 21px;
+}
+.product_price
+{
+	display: inline-block;
+	font-size: 24px;
+	color: #fe4c50;
+	font-weight: 500;
+	line-height: 30px;
+	margin-top: 2px;
+}
+.star_rating
+{
+	display: inline-block;
+	margin-left: 33px;
+}
+.star_rating li
+{
+	display: inline-block;
+	margin-right: -2px;
+	cursor: pointer;
+}
+.star_rating li i
+{
+	color: #fac451;
+}
+.product_color
+{
+	margin-top: 27px;
+}
+.product_color ul
+{
+	display: inline-block;
+	margin-left: 26px;
+}
+.product_color ul li
+{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	margin-right: 29px;
+	cursor: pointer;
+}
+.quantity
+{
+	width: 100%;
+	height: 40px;
+	margin-top: 23px;
+}
+.quantity_selector
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 132px;
+	height: 100%;
+	border: solid 1px #e5e5e5;
+	margin-left: 29px;
+}
+.quantity_selector span
+{
+	font-weight: 500;
+	color: #232530;
+}
+.plus,
+.minus
+{
+	padding-left: 14px;
+	padding-right: 14px;
+	cursor: pointer;
+}
+.plus:hover,
+.minus:hover
+{
+	color: #b5aec4;
+}
+.add_to_cart_button
+{
+	width: 160px;
+	margin-left: 19px;
+	font-size: 12px !important;
+}
+.product_favorite
+{
+	width: 40px;
+	height: 100%;
+	margin-left: 22px;
+	border: solid 1px #e5e5e5;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.product_favorite:hover::after
+{
+	color: #fe4c50;
+}
+.product_favorite::after
+{
+	font-family: 'FontAwesome';
+	content:'\f08a';
+	font-size: 14px;
+}
+.product_favorite.active::after
+{
+	content:'\f004';
+	color: #fe4c50;
+}
+
+/*********************************
+Deskripsi
+*********************************/
+
+.tab_gambar2 img{
+	padding-left: 0px;
+	padding-top: 50px;
+}
+.tab_title
+{
+	margin-bottom: 98px;
+}
+.tab_title h4
+{
+	display: inline-block;
+	color: #fe4c50;
+	border-bottom: solid 1px #fe4c50;
+}
+.tab_text_block2
+{
+	padding-top: 0px;
+	padding-right: 100px;
+	margin-bottom: 100px;
+}
+.tab_text_block p
+{
+	font-weight: 400;
+	margin-top: 50px;
+}
+.tab_text_block
+{
+	padding-top: 20px;
+	padding-left: 100px;
+	margin-bottom: 133px;
+}
+.tab_text_block p
+{
+	font-weight: 400;
+	margin-top: 10px;
+}
+.tab_gambar1
+{
+	padding-top: 30px;
+	padding-right: 100px;
+	width: 100%;
+	margin-bottom: 131px;
+}
+.tab_gambar2
+{
+	padding-top: 30px;
+	padding-left: 100px;
+	width: 100%;
+	margin-bottom: 131px;
+}
+.tab_gambar3
+{
+	padding-top: 30px;
+	padding-right: 100px;
+	width: 100%;
+	margin-bottom: 131px;
+}
+.desc_last
+{
+	margin-bottom: 0px;
+}
+
+/*********************************
+Footerbawah
+*********************************/
+.footer{
+	margin-top: 50px;
+	background: grey;
+}
+.footerbawah
+{
+	padding-left: 300px;
+	padding-top: 50px;
+	height: 130px;
+}
+.Footerkatalog
+{
+	margin-right: 48px;
+}
+.footer_nav li a, .Footerkatalog
+{
+	font-size: 15px;
+	color: black;
+	line-height: 30px;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+.footer_nav li a:hover, .Footerkatalog a, .Footerkatalog i
+{
+	color: #fe4c50;
+}
